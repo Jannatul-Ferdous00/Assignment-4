@@ -144,7 +144,7 @@ mainContainer.addEventListener('click', function(event){
         const statusBtn = parentDiv.querySelector('.cardJobStatus');
         statusBtn.innerText = 'Rejected';
         statusBtn.classList.remove('bg-[#EEF4FF]', 'text-[#002C5C]', 'bg-[#DCFCE7]');
-        statusBtn.classList.add('bg-[#FEE2E2]', 'text-[#EF4444]');
+        statusBtn.classList.add('bg-[#FFC0CB]', 'text-[#EF4444]');
 
         const cardData = {
             cardJobTitle,
