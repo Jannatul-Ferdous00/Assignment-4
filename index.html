@@ -8,11 +8,11 @@
      <script src="https://kit.fontawesome.com/e3bfff1f9b.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="bg-[#F1F2F4] py-12">
+<body class="bg-[#F1F2F4] py-10">
     <header class="w-[80%] mx-auto">
         <h1 class="text-4xl font-bold text-[#002C5C]">Job Application Tracker</h1>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5">
-            <div class="bg-white rounded-[6px] p-4">
+            <div class="bg-white rounded-[6px] p-3">
                 <p class="font-semibold">Total</p>
                 <h4 id="totalCount" class="text-2xl font-bold text-[#002C5C]">0</h4>
             </div>
@@ -26,11 +26,9 @@
             </div>
         </div>
     </header>
-    <section class="w-[80%] mx-auto border-gray-300 border-t-2 my-8 opacity-70">
-        
-    </section>
+    <hr class="my-2 w-[80%] mx-auto my-10 border-gray-400">
     <main class="w-[80%] mx-auto ">
-        <div class="flex justify-between mb-8">
+        <div class="flex justify-between mb-6">
             <h2 class="text-[#002C5C] text-2xl font-semibold">Available Jobs</h2>
                         <p class="text-[#64748B] font-semibold"><span id="totalJobsCount">0</span> jobs</p>
         </div>
@@ -40,19 +38,18 @@
             <button onclick="toggleStyle('rejectedFilterBtn')" class="bg-white text-[#64748B] rounded-[5px] px-5 py-1 cursor-pointer hover:bg-[#3B82F6] hover:text-white" id="rejectedFilterBtn">Rejected</button>
         </div>
 
-        <!-- filtered Cards -->
          <section id="filteredSection" class="hidden"> 
          </section>
-        <div id="nothing" class="p-10 bg-white rounded-[6px] mt-9 mb-10 hidden">
+        <div id="nothing" class="p-10 bg-white rounded-[6px] mt-8 mb-10 hidden">
             <div class="text-center ">
                 <img class="mx-auto mt-10" src="./jobs.png" alt="">
-                <h3 class="text-xl text-[#002C5C] font-semibold mt-6 mb-1 ">No jobs available</h3>
+                <h3 class="text-xl text-[#002C5C] font-semibold mt-7 mb-1 ">No jobs available</h3>
                 <p class="mb-7 text-[#64748B] text-[0.9rem]">Check back soon for new job opportunities</p>
             </div>
         </div>
         <section id="allCards">
             <!-- card 1 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">Mobile First Corp</h3>
@@ -63,7 +60,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -73,7 +70,7 @@
                 </div>
              </div>
             <!-- card 2 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">WebFlow Agency</h3>
@@ -84,7 +81,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -94,7 +91,7 @@
                 </div>
              </div>
             <!-- card 3 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">DataViz Solutions</h3>
@@ -105,7 +102,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -115,7 +112,7 @@
                 </div>
              </div>
             <!-- card 4 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">CloudFirst Inc</h3>
@@ -126,7 +123,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -136,7 +133,7 @@
                 </div>
              </div>
             <!-- card 5 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">Innovation Labs</h3>
@@ -147,7 +144,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -157,7 +154,7 @@
                 </div>
              </div>
             <!-- card 6 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">MegaCorp Solutions</h3>
@@ -168,7 +165,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -178,7 +175,7 @@
                 </div>
              </div>
             <!-- card 7 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">StartupXYZ</h3>
@@ -189,7 +186,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
@@ -199,7 +196,7 @@
                 </div>
              </div>
             <!-- card 8 -->
-             <div class="sm:flex justify-between my-4 p-5 bg-white rounded-[5px]">
+             <div class="flex justify-between my-4 p-5 bg-white rounded-[5px]">
                 <div class="space-y-4">
                     <div>
                         <h3 class="cardJobTitle text-[#002C5C] font-bold text-[1.1rem]">TechCorp Industries</h3>
@@ -210,7 +207,7 @@
                         <button class="cardJobStatus px-4 text-[#002C5C] font-semibold mb-2 py-2 bg-[#EEF4FF] uppercase">Not Applied</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>

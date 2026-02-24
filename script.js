@@ -229,7 +229,7 @@ function renderRejected(){
                         <button class="cardJobStatus px-4 font-semibold mb-2 py-2 bg-[#FEE2E2] text-[#EF4444] uppercase">${reject.cardJobStatus}</button>
                         <p class="cardJobDescription text-[#64748B] font-semibold">${reject.cardJobDescription}</p>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-3">
                         <button class="CardInterviewBtn bg-white border-2 border-[#10B981] text-[#10B981] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#10B981] hover:text-white">Interview</button>
                         <button class="CardRejectedBtn bg-white border-2 border-[#EF4444] text-[#EF4444] rounded-[5px] px-5 py-1 cursor-pointer uppercase hover:bg-[#EF4444] hover:text-white">Rejected</button>
                     </div>
